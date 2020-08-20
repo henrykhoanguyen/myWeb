@@ -1,15 +1,45 @@
+$gradient: linear-gradient(to right, #005AA7, #FFFDE4);
+
 .container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+
 }
 
-.sidenav {
+.header {
   background-image: url('../assets/images/overlay.png'), url('../assets/images/bg3.jpg');
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, scroll;
-  width: 30%;
+  width: 100%;
+}
+
+.khoa {
+  font-size: xxx-large;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social > a {
+  color: white;
+  margin-left: 1em;
+}
+
+.nav-bar a{
+  color: white;
+  margin: auto 1.5rem;
+  text-decoration: none;
+}
+
+// TODO: stuck here! trynna not have toolbar appear black
+// and have it order on top of a grid instead
+mat-toolbar {
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  position: -webkit-sticky;
+  position: sticky;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 2%;
+  font-size: medium;
 }

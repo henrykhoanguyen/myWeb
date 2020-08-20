@@ -1,10 +1,30 @@
+<main  class="container">
+  <mat-toolbar>
+    <span>
+      <a href="#"><i class="fab fa-kickstarter-k khoa"></i></a>
+    </span>
+    <div class="flex-spacer"></div>
+    <span class="nav-bar">
+      <a href="#">Resume</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </span>
+    <div class="flex-spacer"></div>
+    <span class="social">
+      <a href="https://github.com/henrykhoanguyen" target="blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/henrykhoanguyen/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:henrykhoanguyen@gmail.com" target="blank"><i class="fas fa-envelope"></i></a>
+    </span>
+  </mat-toolbar>
 
-<!-- <app-header></app-header>
-<main>
-  <router-outlet></router-outlet>
-</main> -->
+  <mat-grid-list cols="1" rowHeight="2:1">
+    <mat-grid-tile class="header" id="intro">1</mat-grid-tile>
+    <mat-grid-tile style="background: gray" id="skills">2</mat-grid-tile>
+    <mat-grid-tile style="background: wheat" id="projects">3</mat-grid-tile>
+    <mat-grid-tile style="background: whitesmoke" id="contact">4</mat-grid-tile>
+  </mat-grid-list>
 
-<mat-sidenav-container class="container">
-  <mat-sidenav mode="side" opened class="sidenav">Side Nav Content</mat-sidenav>
-  <mat-sidenav-content>Main Content</mat-sidenav-content>
-</mat-sidenav-container>
+
+</main>
+
